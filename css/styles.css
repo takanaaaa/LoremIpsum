@@ -184,7 +184,8 @@ h2.heading {
   border-radius: 50%;
 }
 
-h3.profile-text-heading {
+h3.profile-text-heading,
+h3.contact-text-heading {
   font-size: 20px;
   margin-bottom: 5px;
 }
@@ -194,6 +195,28 @@ h3.profile-text-heading {
   color: #000000;
 }
 
-.profile-item:nth-child(2) {
+.profile-item:nth-child(2),
+.contact-item:nth-child(2) {
   padding-top: 20px;
+}
+
+.social i {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.social i:nth-child(3) {
+  margin-right: 0;
+}
+
+.contact-contents {
+  width: 800px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+  display: flex;
+}
+
+.contact-box {
+  flex-basis: 400px;
+  text-align: center;
 }
