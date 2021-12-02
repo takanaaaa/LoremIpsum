@@ -220,3 +220,18 @@ h3.contact-text-heading {
   flex-basis: 400px;
   text-align: center;
 }
+
+footer {
+  height: 60px;
+  background-color: #ec715f;
+}
+
+.footer-group {
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 16px;
+  color: #fafafa;
+  line-height: 60px;
+}
