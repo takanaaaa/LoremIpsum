@@ -25,12 +25,24 @@ header {
   background-position: left;
 }
 
+.humberger {
+  display: none;
+  color: #fafafa;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fafafa;
+  text-align: center;
+  font-size: 24px;
+  margin: 5px 0;
+}
+
 .nav-list-item {
   display: inline-block;
   padding: 0 30px;
   line-height: 70px;
   font-size: 16px;
 }
+
 
 .nav-list-item > a {
   text-decoration: none;
@@ -58,7 +70,6 @@ h1.heading {
 
 .main-visual-text > p {
   font-size: 20px;
-  text-align: center;
 }
 
 .portfolio,
@@ -204,15 +215,6 @@ h3.contact-text-heading {
   padding-top: 20px;
 }
 
-.social i {
-  font-size: 50px;
-  margin-right: 20px;
-}
-
-.social i:nth-child(3) {
-  margin-right: 0;
-}
-
 .contact-contents {
   width: 800px;
   margin: 0 auto;
@@ -223,6 +225,15 @@ h3.contact-text-heading {
 .contact-box {
   flex-basis: 400px;
   text-align: center;
+}
+
+.social i {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.social i:nth-child(3) {
+  margin-right: 0;
 }
 
 footer {
@@ -238,4 +249,118 @@ footer {
   font-size: 16px;
   color: #fafafa;
   line-height: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    height: 50px;
+  }
+
+  .header-group {
+    width: 90%;
+  }
+
+  .humberger {
+    display: inline-block;
+  }
+
+  .logo-image {
+    width: 100px;
+    height: 50px;
+  }
+
+  .nav-list-item {
+    display: none;
+  }
+
+  .main-visual {
+    background-image: url(../img/code.png);
+  }
+
+  h1.heading {
+    font-size: 40px;
+  }
+
+  .main-visual-text > p {
+    font-size: 18px;
+  }
+
+  .text {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .portfolio-contents,
+  .feature-contents,
+  .profile-contents,
+  .contact-contents {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .portfolio-boxs {
+    display: block;
+    padding-bottom: 90px;
+  }
+
+  .portfolio-box:nth-child(3n) {
+    margin-right: auto;
+  }
+
+  .portfolio-box {
+    margin: 0 auto;
+  }
+
+  .portfolio-box:nth-child(even) {
+    margin-bottom: 10px;
+  }
+
+  .portfolio-box:nth-child(odd) {
+    display: none;
+  }
+
+  .feature {
+    width: 100%;
+  }
+
+  .feature-box {
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+
+  .feature-box:nth-child(1) {
+    padding-top: 0;
+  }
+
+  .feature-box:nth-child(3) {
+    margin-right: auto;
+  }
+
+  .profile-contents {
+    display: block;
+  }
+
+  .profile-image {
+    margin: 0 auto;
+  }
+
+  .profile-box {
+    text-align: center;
+  }
+
+  h3.profile-text-heading {
+    margin-top: 20px;
+  }
+
+  .contact-contents {
+    display: block;
+  }
+
+  .social i:nth-child(3) {
+    margin-right: auto;
+  }
+
+  .contact-item {
+    padding-top: 20px;
+  }
 }
